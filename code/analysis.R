@@ -35,4 +35,5 @@ source("code/functions.R")
   
   #why aren't we using a GAM?!
   gam_hum_forest <- gam(canopy_perc_fixed~s(soil_hum_prop)+forest_type, data=canopy)
-  
+  anova(gam_hum_forest)
+  summary(gam_hum_forest)
