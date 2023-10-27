@@ -4,7 +4,7 @@ library(ggplot2)
 source("functions.R")
 
 #import data 
-  canopy <- read.csv("canopy_humidity.csv")
+  canopy <- read.csv("datum/canopy_humidity.csv")
   head(canopy)
   
 #convert units
