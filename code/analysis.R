@@ -1,10 +1,10 @@
 #analysis of canopy data
 library(ggplot2)
 
-source("functions.R")
+source("code/functions.R")
 
 #import data 
-  canopy <- read.csv("datum/canopy_humidity.csv")
+  canopy <- read.csv("data/canopy_humidity.csv")
   head(canopy)
   
 #convert units
