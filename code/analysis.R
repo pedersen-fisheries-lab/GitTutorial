@@ -1,5 +1,6 @@
 #analysis of canopy data
 library(ggplot2)
+library(mgcv)
 
 source("code/functions.R")
 
@@ -29,4 +30,9 @@ source("code/functions.R")
 
   #To be continued...
   
+
   #adding a meaningless comment
+  
+  #why aren't we using a GAM?!
+  gam_hum_forest <- gam(canopy_perc_fixed~s(soil_hum_prop)+forest_type, data=canopy)
+  
